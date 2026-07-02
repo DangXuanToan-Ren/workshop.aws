@@ -5,55 +5,31 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Phân tích sâu nhóm dịch vụ Compute và Storage trên AWS.
+- Tìm hiểu các Use Cases thực tế của EC2 và S3.
+- Nghiên cứu lý thuyết về nhóm dịch vụ Networking (VPC cơ bản).
+- Tìm hiểu tổng quan về nhóm dịch vụ Database (RDS, DynamoDB).
+- Thực hành kiểm tra và vận hành các dịch vụ qua Console và CLI.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Phân tích sâu nhóm dịch vụ Compute và Storage trên AWS.<br>- Tìm hiểu các Use Cases thực tế của EC2 và S3. | 05/05/2026 | 05/05/2026 |https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Nghiên cứu lý thuyết về nhóm dịch vụ Networking (VPC cơ bản).<br>- Tìm hiểu tổng quan về nhóm dịch vụ Database (RDS, DynamoDB). | 06/05/2026 | 06/05/2026 |https://cloudjourney.awsstudygroup.com/ |
+| 4 | **Thực hành:**<br>&emsp;+ Kiểm tra lại môi trường AWS Free Tier đảm bảo hoạt động ổn định.<br>&emsp;+ Vận hành thử nghiệm các dịch vụ qua giao diện Console. | 07/05/2026 | 07/05/2026 |https://cloudjourney.awsstudygroup.com/ |
+| 5 | **Thực hành:**<br>&emsp;+ Gõ lệnh CLI truy vấn trạng thái tài nguyên Compute và Storage.<br>&emsp;+ Quản lý cấu hình dịch vụ trực tiếp từ máy tính cá nhân. | 08/05/2026 | 09/05/2026 |https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Viết log tổng hợp tiến độ hoàn thành các bài lab cơ bản về CLI và Console.<br>- Đánh giá mức độ làm chủ các nhóm dịch vụ. | 09/05/2026 | 09/05/2026 |https://cloudjourney.awsstudygroup.com/ |
 
 ### Kết quả đạt được tuần 3:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Phân tích được sâu về nhóm dịch vụ Compute và Storage.
+- Hiểu được các Use Cases thực tế của EC2 và S3.
+- Nắm được lý thuyết cơ bản về VPC (Networking).
+- Có tổng quan về nhóm dịch vụ Database (RDS, DynamoDB).
+- Kiểm tra được môi trường AWS Free Tier ổn định.
+- Vận hành thử nghiệm thành công các dịch vụ qua Console.
+- Sử dụng được CLI để truy vấn trạng thái và quản lý cấu hình Compute & Storage.
+- Viết được log tổng hợp và đánh giá mức độ làm chủ các nhóm dịch vụ.
 
 

@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Tích hợp xác thực người dùng và tối ưu hóa phân phối ứng dụng Frontend.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Nghiên cứu dịch vụ Amazon Cognito <br> - Tìm hiểu cơ chế xác thực người dùng (User Pool) và luồng Đăng nhập/Đăng ký.                                                                      | 16/06/2026   | 16/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | **Thực hành:** <br>&emsp; + Tích hợp Amazon Cognito với Amazon API Gateway. <br>&emsp; + Cấu hình cấp quyền truy cập an toàn cho các API đã tạo từ Tuần 8.                                     | 17/06/2026   | 17/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tìm hiểu giải pháp lưu trữ giao diện web tĩnh (Frontend) trên Amazon S3. <br> - Nghiên cứu kiến trúc mạng phân phối nội dung Amazon CloudFront (CDN).                                      | 18/06/2026   | 18/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | **Thực hành:** <br>&emsp; + Tải mã nguồn giao diện web tĩnh (HTML/CSS/JS hoặc ReactJS) lên Amazon S3. <br>&emsp; + Thiết lập tính năng Static Website Hosting cho S3 bucket.                 | 19/06/2026   | 19/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | **Thực hành:** <br>&emsp; + Thiết lập và cấu hình Amazon CloudFront phân phối nội dung từ nguồn S3. <br>&emsp; + Kiểm tra và tối ưu hóa tốc độ tải trang (Caching) qua CDN.                  | 20/06/2026   | 20/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Nắm được kiến trúc và cách hoạt động của Amazon Cognito User Pool cho xác thực người dùng.
+* Đã tích hợp thành công Cognito với API Gateway để bảo vệ các endpoint REST API.
+* Thiết lập và chạy được trang web tĩnh trên Amazon S3 bằng tính năng Static Website Hosting.
+* Cấu hình thành công CloudFront làm CDN phân phối nội dung từ S3, cải thiện tốc độ tải trang nhờ caching.
+* Hiểu được cách kết hợp Cognito + API Gateway + S3 + CloudFront để tạo một hệ thống web full-stack an toàn và hiệu quả.
 
 

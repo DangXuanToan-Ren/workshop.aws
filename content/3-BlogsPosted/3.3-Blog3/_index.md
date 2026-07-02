@@ -5,27 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# [AWS Tech Share] Turning Viewers into Players: Building Interactive Game Experiences with GameLift Streams
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Today I'd like to share how AWS solves the "Interactive Streaming" problem – turning game stream viewing into real-time two-way interactive communication.
 
-Key points to know:
+In game development, organizing playtests often takes a lot of time (downloading builds, setup, reviewing videos). At the same time, interacting with the viewer community also faces barriers when viewers can only type dynamic chat. To solve this problem, AWS has introduced an extremely powerful combined architecture.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## 3 "PILLARS" OF THE SOLUTION ARCHITECTURE:
 
-...Image...
+- **Amazon GameLift Streams**: Supports streaming games directly from the server to the browser (WebRTC) with extremely low latency, reaching quality up to 1080p at 60 FPS without requiring players to download or install the game.
+- **Amazon IVS (Interactive Video Service)**: Receives gameplay streams and distributes them globally with subsecond latency (under 1 second).
+- **AWS AppSync**: Acts as a bridge, providing WebSocket APIs to transmit signals, reactions, and control commands from viewers back into the game instantly.
 
-...Link...
 
-...Guide...
+## HOW DOES THE PROCESS FLOW WORK?
+
+1. Users interact on the React Frontend interface, authenticated securely through Amazon Cognito.
+2. Amazon API Gateway and AWS Lambda will handle communication and initialize the stream session.
+3. On the server side, GameLift Streams runs the game, while also launching a background process called "Broadcast Sidecar".
+4. This Sidecar application will capture image/audio, encode standard H.264 video, and push the stream directly to Amazon IVS's stage with latency under 300ms.
+
+<img src="/images/Blog3/717792483_1542699650893252_4468378101643065781_n.jpg" alt="GameLift Streams Architecture 1" class="blog-image" />
+<img src="/images/Blog3/718204942_1542699634226587_8876440514239223290_n.jpg" alt="GameLift Streams Architecture 2" class="blog-image" />
+<img src="/images/Blog3/718597666_1542699647559919_5008900173891667306_n.jpg" alt="GameLift Streams Architecture 3" class="blog-image" />
+
+
+## TECHNICAL HIGHLIGHT: "CONTROL HANDOFF" MECHANISM
+
+The most impressive point in this solution is how to handle "handing over control" (Control Handoff) to participants. The system uses AWS AppSync Event API to coordinate clear status control messages, such as:
+- **TAKEOVER_REQUEST**: Request to take control from the current player.
+- **TAKEOVER_APPROVED**: Approve and start sharing the session via CreateStreamConnection API.
+
+
+## CONCLUSION
+
+This architecture not only optimizes the internal Playtesting process of studios but also opens up endless potential for marketing campaigns: where stream viewers can directly participate in the game (e.g., vote on direction, spawn monsters) right in the browser without any obstacles.
+
+
+Original article link: https://aws.amazon.com/blogs/gametech/creating-interactive-gaming-experiences-with-amazon-gamelift-streams-and-amazon-interactive-video-service/

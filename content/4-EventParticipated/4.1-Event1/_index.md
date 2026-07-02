@@ -6,121 +6,68 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# SUMMARY REPORT: AWS EVENT (09/05/2026)
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
 
-### Event Objectives
+## I. Event Overview & Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+The event was organized to share methodologies on high-efficiency learning and AI skills (in the field of Prompt Engineering) applied to real work. At the same time, the program also provided many career orientations, preparing the best foundation for Freshers in the technology era, combined with introducing the BMAD working model and practical demo sections.
 
-### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+## II. List of Speakers & Topics
 
-### Key Highlights
+- Brother Long: "How to get addicted to learning like social media"
+- Brother Thịnh: "Automated Prompt Engineering"
+- Brother Khang: "Haven't started working yet?" & Portrait of "AI-Ready Fresher"
+- Sister Thư: Introducing the "BMAD" model (Benefits & Application Guide)
 
-#### Identifying the drawbacks of legacy application architecture
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+## III. Key Takeaways
 
-#### Transitioning to modern application architecture – Microservices
+### 1. Unlocking learning motivation (Brother Long)
+Brother Long explained very logically why the brain usually prioritizes browsing social media (instant rewards, continuous stimulation, easy) over learning (slow results, requires long-term focus).
+The solution proposed is to turn the knowledge acquisition process into a "dopamine game":
+- Tricking the Amygdala: Reduce the pressure to start by breaking down knowledge into small chunks. Strictly apply the "2-Minute Rule" (things taking under 2 minutes need to be done immediately).
+- Acknowledging progress: Don't overlook small achievements to create a positive mindset for yourself.
+- Changing touch points: Shift time spent consuming passive content to actively seeking and collecting knowledge with clear goals.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+### 2. Optimizing AI communication skills (Brother Thịnh)
+Analyzed and directly addressed the core mistake of most users: Giving too generic prompts but expecting excellent results from AI.
+- Cost problem: Optimizing prompts is not only about getting correct results but also about saving tokens (cost).
+- Core thinking: Absolutely don't dump all messy data and make AI analyze it itself. Instead, provide sharp context, go straight to the point along with clear, structured requirements.
 
-#### Domain-Driven Design (DDD)
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+### 3. Preparing to enter the enterprise (Brother Khang)
+Brought a realistic perspective on essential life skills for Freshers when starting in a professional work environment. The Q&A session also resolved many concerns about career paths and gave an objective answer to the question "Will AI replace humans?".
 
-#### Event-Driven Architecture
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### 4. BMAD Working Framework & Demo Experience (Sister Thư)
+Sister Thư painted a complete picture of the BMAD framework, its practical values and how to integrate it into workflows. The event concluded with a live Demo on generating and refining prompts, clearly demonstrating how optimizing prompts completely changes output quality.
 
-#### Compute Evolution
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+## IV. Key Values Gained
 
-#### Amazon Q Developer
+- About mindset: Grasped the "habit design" mechanism based on reward principles to maintain a consistent learning rhythm without interruption.
+- About AI skills: Understood that "clarity + focus" is the key to stable results and optimized operating costs.
+- About direction: Updated market expectations for a current Fresher, along with a new productivity framework.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
 
-### Key Takeaways
+## V. Plan to Apply in Practice
 
-#### Design Mindset
+- Incorporate the "2-Minute Rule" and breakdown technique into daily work processing, especially when starting complex AWS labs or researching new technologies.
+- Completely change the habit of writing prompts following a standardized structure: Goal → Necessary context → Specific constraints → Output format.
+- Practice writing prompts following the "less but sufficient" principle, removing irrelevant information to control token consumption.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
 
-#### Technical Architecture
+## VI. Personal Reflections
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+The event was very tight-knit and closely aligned with real pain points. Personally, I felt very reassured about the shift to "getting addicted to learning" because it helped me find a way to maintain sustainable motivation, along with the Prompt Engineering section making me more conscious of the cost each time I interact with AI. The final Demo experience was truly a convincing visual proof of the power of mastering prompts.
 
-#### Modernization Strategy
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+## VII. Some Event Photos
 
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+<img src="/images/Event1/z7969047285444_748587318ef654c1222cc71b0f197490.jpg" alt="AWS Event Photo 1" class="blog-image" />
+<img src="/images/Event1/z7969047285635_60e3a9b08cf0a79a848a7d4d65d4e182.jpg" alt="AWS Event Photo 2" class="blog-image" />
+<img src="/images/Event1/z7969047290022_88a656b10ba6e5f177fe2a6c1814d9e5.jpg" alt="AWS Event Photo 3" class="blog-image" />
+<img src="/images/Event1/z7969047291239_ad12d0de01a981fc8eaba9d52ed15de6.jpg" alt="AWS Event Photo 4" class="blog-image" />

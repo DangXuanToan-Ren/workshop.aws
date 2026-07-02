@@ -6,120 +6,68 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# BÁO CÁO THU HOẠCH SỰ KIỆN: AWS EVENT (09/05/2026)
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
 
-### Mục Đích Của Sự Kiện
+## I. Tổng Quan và Mục Tiêu Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Sự kiện được tổ chức nhằm chia sẻ các phương pháp luận về cách học tập hiệu suất cao và kỹ năng dùng AI (trong lĩnh vực Prompt Engineering) vào công việc thực tế. Đồng thời, chương trình cũng cung cấp nhiều định hướng nghề nghiệp, chuẩn bị hành trang tốt nhất cho các bạn Fresher trong kỷ nguyên công nghệ, kết hợp giới thiệu mô hình làm việc BMAD và các phần demo thực tế quan.
 
-### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+## II. Danh Sách Diễn Giả & Chủ Đề
 
-### Nội Dung Nổi Bật
+- Anh Long: "Làm sao để nghiện học như nghiện mạng xã hội"
+- Anh Thịnh: "Automated Prompt Engineering"
+- Anh Khang: "Sao chưa đi làm?" & Chân dung "AI-Ready Fresher"
+- Chị Thư: Giới thiệu mô hình "BMAD" (Lợi ích & Hướng dẫn áp dụng)
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+## III. Ghi Nhận Nội Dung Nổi Bật
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+### 1. Khai phá động lực học tập (Anh Long)
+Anh Long đã giải thích rát logic lý do nào bộ thường ưu tiên lướt mạng xã hội (phần thưởng tức thì, kích thích liên tục, dễ) hơn là việc học (thành quả chậm, đòi hỏi sự tập trung dài hạn).
+Giải pháp đưa ra là biến quá trình tiếp thu kiến thức thành một "trò chơi dopamine":
+- Đánh lừa vùng Amygdala: Giảm áp lực bắt đầu bằng cách chia nhỏ khối lượng kiến thức. Áp dụng triệt để "Quy tắc 2 phút" (những việc tốn dưới 2 phút cần làm ngay lập tức).
+- Ghi nhận tiến bộ: Không bỏ qua những thành tựu nhỏ để tự tạo tâm lý cho bản thân.
+- Thay đổi điểm chạm: Chuyển đổi thời quên tiêu thụ những nội dung thụ động sang việc chủ động tìm kiếm và thu thập kiến thức có mục đích rõ ràng.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### 2. Tối ưu hóa kỹ năng giao tiếp với AI (Anh Thịnh)
+Phân tích bài khi thẳng vào sai lầm cốt lỗi của đa số người dùng: Đưa ra prompt quá chung chung nhưng lại kỳ vọng AI trả về kết quả xuất sắc.
+- Bài toán chi phí: Tối ưu prompt không chỉ để lấy kết quả đúng mà còn là bài toán tiết kiệm token (chi phí).
+- Tư duy cốt lõi: Tuyệt đối không nhốt toàn bộ dữ liệu hỗn độn và bắt AI tự phân tích. Thay vào đó, cần cung cấp một ngữ cảnh (context) sắc bén, đi thẳng vào trọng tâm kèm theo các yêu cầu rõ ràng mạch.
 
-#### Domain-Driven Design (DDD)
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### 3. Hành trang bước vào doanh nghiệp (Anh Khang)
+Mang đến góc nhìn thực tế về những bộ kỹ năng sống dành cho Fresher khi bắt đầu môi trường làm việc chuyên nghiệp. Chuyên mục hỏi đáp cũng đã giải tỏa được nhiều khúc mắc về lộ trình sự nghiệp và trả lời góc nhìn khách quan cho câu hỏi "Liệu AI có thay con người?".
 
-#### Event-Driven Architecture
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### 4. Khung làm việc BMAD & Trải nghiệm Demo (Chị Thư)
+Chị Thư đã phác họa bức tranh tổng thể về framework BMAD, những giá trị thực tiễn và cách tích hợp nó vào luồng công việc (workflow). Sự kiện khép lại bằng phần Demo trực tiếp cách generate và tinh chỉnh prompt, minh chứng rõ ràng cho việc tối ưu câu lệnh sẽ thay đổi hoàn toàn chất lượng đầu ra.
 
-#### Compute Evolution
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+## IV. Giá Trị Động Lắm
 
-#### Amazon Q Developer
+- Về tư duy: Nắm được cơ chế "thiết kế thời quen" dựa trên nguyên lý phân thưởng để duy trì nhịp độ học tập không bị ngắt quãng.
+- Về kỹ năng AI: Hiểu rõ nguyên lý "rõ ràng + trọng tâm" là chìa khóa để có kết quả ổn định và tối ưu chi phí vận hành.
+- Về hướng: Cập nhật được kỳ vọng của thị trường đối với một Fresher hiện nay, kèm theo một bộ khung làm việc năng suất mới.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
 
-### Những Gì Học Được
+## V. Kế Hoạch Ứng Dụng Vào Thực Tế
 
-#### Tư Duy Thiết Kế
+- Đưa "Quy tắc 2 phút" và kỹ thuật chia nhỏ (breakdown task) vào quá trình xử lý công việc hàng ngày, đặc biệt là khi bắt tay vào hình các bài lab AWS phức tạp hoặc nghiên cứu công nghệ mới.
+- Thay đổi hoàn toàn thói quen viết prompt theo một cấu trúc chuẩn hóa: Mục tiêu → Ngữ cảnh cần thiết → Ràng buộc cụ thể → Định dạng Output.
+- Rèn luyện kỹ năng viết prompt theo nguyên tắc "ít nhưng đủ", lược bỏ các thông tin lạ để kiểm soát việc tiêu thụ token.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
 
-#### Kiến Trúc Kỹ Thuật
+## VI. Cảm Nhận Cá Nhân
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Sự kiện diễn ra rất khít khắt rất gũi và bám sát vào những nỗi đau thực tế. Bản thân mình cảm thấy tâm vững ổn ở chuyển để "nghiện học" vì nó giúp mình tìm ra cách duy trì động lực bền vững, cùng với phần Prompt Engineering giúp mình có ý thức hơn về chi phí mỗi lần tương tác với AI. Trải nghiệm Demo cuối giờ thực sự là một minh chứng trực quan thuyết phục về sức mạnh của việc làm chủ prompt.
 
-#### Chiến Lược Hiện Đại Hóa
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+## VII. Một Số Hình Ảnh Từ Sự Kiện
 
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+<img src="/images/Event1/z7969047285444_748587318ef654c1222cc71b0f197490.jpg" alt="Sự kiện AWS Event 1" class="blog-image" />
+<img src="/images/Event1/z7969047285635_60e3a9b08cf0a79a848a7d4d65d4e182.jpg" alt="Sự kiện AWS Event 2" class="blog-image" />
+<img src="/images/Event1/z7969047290022_88a656b10ba6e5f177fe2a6c1814d9e5.jpg" alt="Sự kiện AWS Event 3" class="blog-image" />
+<img src="/images/Event1/z7969047291239_ad12d0de01a981fc8eaba9d52ed15de6.jpg" alt="Sự kiện AWS Event 4" class="blog-image" />

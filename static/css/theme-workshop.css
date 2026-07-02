@@ -226,3 +226,18 @@ div.notices.info p {
   border-top: 30px solid #fd9827;
   background: #fff2db;
 }
+
+/* Avatar sizing for profile page */
+.profile-avatar {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .profile-avatar {
+    width: 120px;
+  }
+}

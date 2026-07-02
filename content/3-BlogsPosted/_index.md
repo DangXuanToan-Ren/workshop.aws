@@ -6,17 +6,13 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+This section will list and introduce the blogs I have posted:
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+### [Blog 1 - Supporting Game Development with AWS Game Dev Toolkit](3.1-blog1/)
+This blog introduces the AWS Cloud Game Development Toolkit, an open-source set of tools providing pre-configured Terraform and Packer templates that help studios quickly build game development environments on AWS, increasing work efficiency and reducing setup time.
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+### [Blog 2 - Understanding the Multi-Build Solution on Amazon GameLift Servers](3.2-blog2/)
+This blog shares about the Multi-Build solution on Amazon GameLift Servers, which allows developers to store and run multiple game server versions on the same fleet, helping to speed up game development and testing.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+### [Blog 3 - Turning Viewers into Players: Building Interactive Gaming Experiences with GameLift Streams](3.3-blog3/)
+This blog guides how AWS solves the "Interactive Streaming" problem - turning game stream viewing into real-time two-way interactive communication, combining services like Amazon GameLift Streams, Amazon IVS and AWS AppSync.

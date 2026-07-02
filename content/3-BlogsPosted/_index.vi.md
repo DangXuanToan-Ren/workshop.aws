@@ -6,17 +6,13 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà tôi đã đăng:
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+### [Blog 1 - Hỗ trợ phát triển game với AWS Game Dev Toolkit](3.1-blog1/)
+Blog này giới thiệu AWS Cloud Game Development Toolkit, một bộ công cụ mã nguồn mở cung cấp các mẫu Terraform và Packer được cấu hình sẵn, giúp các studio nhanh chóng xây dựng môi trường phát triển game trên AWS, tăng hiệu quả làm việc và giảm thời gian thiết lập.
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 2 - Tìm hiểu Giải pháp Multi-Build trên Amazon GameLift Servers](3.2-blog2/)
+Blog này chia sẻ về giải pháp Multi-Build trên Amazon GameLift Servers, cho phép phát triển lưu trữ và vận hành nhiều phiên bản máy chủ trò chơi trên cùng một fleet, giúp tăng tốc độ phát triển và thử nghiệm game.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 3 - Chuyển Đổi Người Xem Thành Người Chơi: Xây Dựng Trải Nghiệm Game Tương Tác Cùng GameLift Streams](3.3-blog3/)
+Blog này hướng dẫn cách AWS giải quyết bài toán "Interactive Streaming" - biến trải nghiệm xem stream game thành giao tiếp tương tác thời gian thực hai chiều, kết hợp các dịch vụ như Amazon GameLift Streams, Amazon IVS và AWS AppSync.

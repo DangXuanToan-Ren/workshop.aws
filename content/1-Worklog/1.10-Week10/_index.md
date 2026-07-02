@@ -5,53 +5,25 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 10 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Automate infrastructure deployment with Infrastructure as Code (IaC) approach.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Approach Infrastructure as Code (IaC) methodology. <br> - Get an overview of AWS CloudFormation and AWS SAM (Serverless Application Model).                                                          | 23/06/2026 | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Study the basic structure of AWS SAM template. <br> - Learn the syntax for writing infrastructure configuration code in YAML/JSON format.                                                          | 24/06/2026 | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | **Practice:** <br>&emsp; + Write configuration code (YAML) to automatically define resources: AWS Lambda and Amazon DynamoDB.                                                                          | 25/06/2026 | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | **Practice:** <br>&emsp; + Add Amazon API Gateway configuration definition to the template. <br>&emsp; + Set up links (Events, Permissions) between API Gateway, Lambda and DynamoDB in the code file. | 26/06/2026 | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | **Practice:** <br>&emsp; + Use AWS SAM CLI to automatically create, package (build/package) and deploy (deploy) the entire Serverless resource cluster. <br>&emsp; + Compare advantages and verify results against manual operations on Console. | 27/06/2026 | 27/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 10 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Understood the concept and benefits of Infrastructure as Code (IaC) in infrastructure management.
+* Proficient in writing AWS SAM template structure in YAML format.
+* Wrote a complete template file defining Lambda, DynamoDB and API Gateway.
+* Set up Events and IAM Permissions links between services in the template.
+* Able to use AWS SAM CLI to build, package and deploy the entire serverless stack automatically.
+* Recognized the benefits of speed, consistency and ease of management compared to manual methods.
