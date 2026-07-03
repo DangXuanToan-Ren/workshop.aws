@@ -5,55 +5,33 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết lập luồng CI/CD (Tích hợp và Triển khai liên tục) để tự động hóa quy trình phát hành ứng dụng Frontend.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Nghiên cứu về luồng CI/CD cho ứng dụng Frontend. <br> - Đánh giá và lựa chọn công cụ để cấu hình pipeline (sử dụng AWS CodePipeline, CodeBuild hoặc GitHub Actions).                       | 30/06/2026   | 30/06/2026      |
+| 3   | - Thực hành: <br>&emsp; + Thiết lập mã nguồn trên Git repository. <br>&emsp; + Cấu hình bước đầu tiên của pipeline để hệ thống tự động build mã nguồn mỗi khi có thay đổi code mới.         | 01/07/2026   | 01/07/2026      |
+| 4   | - Thực hành: <br>&emsp; + Tích hợp bước tự động đồng bộ (sync) các file tĩnh (static files) của ứng dụng Frontend sau khi build thành công lên kho lưu trữ Amazon S3.                        | 02/07/2026   | 02/07/2026      |
+| 5   | - Thực hành: <br>&emsp; + Viết cấu hình kịch bản tự động thực hiện thao tác Invalidation (xóa bộ nhớ đệm) trên Amazon CloudFront vào quy trình pipeline.                                    | 03/07/2026   | 03/07/2026      |
+| 6   | - Kiểm thử toàn diện toàn bộ luồng CI/CD. <br> - Đẩy (push) một thay đổi code nhỏ và theo dõi quá trình hệ thống tự động build, deploy và xóa cache để giúp giao diện được cập nhật ngay lập tức mà không cần thao tác thủ công. | 04/07/2026   | 04/07/2026      |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm được khái niệm và luồng hoạt động cơ bản của CI/CD (Continuous Integration / Continuous Deployment).
+* Đã lựa chọn và cấu hình thành công pipeline bằng GitHub Actions (hoặc AWS CodePipeline tùy theo lựa chọn).
+* Thiết lập thành công Git repository và kết nối với hệ thống CI/CD.
+* Tự động hóa quá trình build mã nguồn Frontend mỗi khi có commit mới được push lên repo.
+* Tích hợp thành công bước deploy file tĩnh lên Amazon S3 sau khi build hoàn tất.
+* Thực hiện được thao tác CloudFront Invalidation tự động để xóa cache, giúp người dùng thấy được thay đổi mới nhất ngay lập tức.
+* Kiểm thử toàn bộ luồng CI/CD thành công: chỉ cần push code, hệ thống sẽ tự động hoàn tất build → deploy → invalidate cache.
+* Hiểu rõ lợi ích của CI/CD: giảm thiểu lỗi thủ công, tăng tốc độ phát hành, đảm bảo tính nhất quán giữa các môi trường.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 
