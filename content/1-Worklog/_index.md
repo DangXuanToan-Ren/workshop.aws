@@ -59,5 +59,10 @@ This page will introduce my worklog, completing the program in 10 weeks (with We
 - Writing AWS SAM templates
 - Deploying entire serverless stack
 
-**Week 11:** Not updated yet
+**Week 11:** [Setting up CI/CD pipeline for Frontend](1.11-week11/)
+- Researching CI/CD pipeline for Frontend applications
+- Setting up Git repository and automatic build
+- Deploying static files to S3 and configuring CloudFront invalidation
+- Testing the complete CI/CD workflow
+
 **Week 12:** Not updated yet

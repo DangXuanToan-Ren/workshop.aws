@@ -59,5 +59,10 @@ Trong trang này sẽ giới thiệu worklog của tôi, hoàn thành chương t
 - Viết AWS SAM template
 - Deploy toàn bộ serverless stack
 
-**Tuần 11:** Chưa cập nhật
+**Tuần 11:** [Thiết lập luồng CI/CD cho Frontend](1.11-week11/)
+- Nghiên cứu luồng CI/CD cho ứng dụng Frontend
+- Thiết lập Git repository và build tự động
+- Deploy file tĩnh lên S3 và cấu hình CloudFront invalidation
+- Kiểm thử toàn bộ luồng CI/CD
+
 **Tuần 12:** Chưa cập nhật
