@@ -65,4 +65,8 @@ Trong trang này sẽ giới thiệu worklog của tôi, hoàn thành chương t
 - Deploy file tĩnh lên S3 và cấu hình CloudFront invalidation
 - Kiểm thử toàn bộ luồng CI/CD
 
-**Tuần 12:** Chưa cập nhật
+**Tuần 12:** [Kiểm thử hệ thống, quản lý chi phí và báo cáo cuối](1.12-week12/)
+- Thực hiện kiểm thử end-to-end (E2E) toàn bộ hệ thống AWS
+- Học công cụ quản lý chi phí AWS: Cost Explorer và Budgets
+- Dọn dẹp các tài nguyên AWS không còn sử dụng
+- Hoàn thành và nộp báo cáo thực tập cuối cùng cùng bài thuyết trình

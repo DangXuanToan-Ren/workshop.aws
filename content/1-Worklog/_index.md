@@ -65,4 +65,8 @@ This page will introduce my worklog, completing the program in 10 weeks (with We
 - Deploying static files to S3 and configuring CloudFront invalidation
 - Testing the complete CI/CD workflow
 
-**Week 12:** Not updated yet
+**Week 12:** [System testing, cost management, and final report](1.12-week12/)
+- Performing end-to-end (E2E) testing of the entire AWS system
+- Learning AWS cost management tools: Cost Explorer and Budgets
+- Performing resource cleanup of unused AWS services
+- Completing and submitting the final internship report and presentation
